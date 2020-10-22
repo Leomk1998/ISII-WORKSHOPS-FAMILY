@@ -16,18 +16,18 @@ public class CarInsurance {
 	    entradaTeclado = "";
 	    String sexo = entradaEscaner.nextLine();
 	    int prima = 500;
-	    if(sexo.equals("M") || casado.equals("not married") || edad<25) {
+	    if(sexo =="M" && casado == "not married" && edad<25) {
 	    	prima+=1500;
-	    }if(sexo.equals("F") & casado.equals("married")) {
+	    }if(sexo.equals("F") && casado.equals("married")) {
 	    	prima-=200;
-	    }if(edad<65 & edad>45) {
+	    }if(edad<65 && edad>45) {
 	    	prima-=100;
 	    }if(edad>80) {
 	    	 System.out.println("No se vender seguros para mayores de 80");
 	    	 prima=-1;
 	    }
 	    System.out.println("El valor de la prima es "+prima);
-	    System.out.println(sexo);
+	    System.out.println("M"=="M");
 	    System.out.println(edad);
 	    System.out.println(casado);
 	    
