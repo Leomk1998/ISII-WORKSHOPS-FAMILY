@@ -27,9 +27,5 @@ public class CarInsurance {
 	    	 prima=-1;
 	    }
 	    System.out.println("El valor de la prima es "+prima);
-	    System.out.println("M"=="M");
-	    System.out.println(edad);
-	    System.out.println(casado);
-	    
 	}
 }
