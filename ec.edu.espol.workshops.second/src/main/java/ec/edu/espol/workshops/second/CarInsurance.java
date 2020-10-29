@@ -1,12 +1,15 @@
 package ec.edu.espol.workshops.second;
 
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class CarInsurance {
-	public static void main(String[] args) {
+
+	public static void main(String[] args) throws IOException {
 		System.out.print("Ingrese su edad:");
 	    String entradaTeclado = "";
-	    Scanner entradaEscaner = new Scanner(System.in);
+	    Scanner entradaEscaner = new Scanner(new InputStreamReader(System.in, "UTF-8"));
 	    entradaTeclado = entradaEscaner.nextLine();
 	    int edad = Integer.parseInt(entradaTeclado);
 	    System.out.print("Ingrese su sexo(M/F):");
