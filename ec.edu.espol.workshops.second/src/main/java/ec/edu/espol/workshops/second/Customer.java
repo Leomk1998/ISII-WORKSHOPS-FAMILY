@@ -1,10 +1,13 @@
 package ec.edu.espol.workshops.second;
-
+/*Clase Customer 29/10/2020*/
 public class Customer {
 	String sexo;
 	String casado;
 	int edad;
 	
+	public Customer() {
+		
+	}
 	
 	
 	public String getSexo() {
