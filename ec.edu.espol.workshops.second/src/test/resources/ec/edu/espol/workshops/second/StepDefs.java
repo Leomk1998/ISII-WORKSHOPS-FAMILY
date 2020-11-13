@@ -26,20 +26,28 @@ public class StepDefs {
 	assertEquals(expectedAnswer, actualAnswer);
 	}
 	
-	@Given("F")
-	public void gender_is_F() {
-		gender = "F";
+	@Given("I am other")
+	public void f() {
+		gender = "anything else!";
 	}
-	@Given("{string}")
-	public void gender_is(String today) {
-		this.today = today;
+	@Given("gender is {string}")
+	public void gender_is(String gender) {
+		this.gender = gender;
 	}
 	@When("I ask about your gender")
 	public void i_ask_about_your_gender() {
-		actualAnswer = "Its undefined";
+		actualAnswer = "Male";
 	}
-	@Then("I should be told {string} gender")
+	@Then("I should be told gender {string}")
 	public void i_should_be_told_gender(String expectedAnswer) {
 		assertEquals(expectedAnswer, actualAnswer);
 	}
+
+	@When("I ask if you are male")
+	public void i_ask_if_you_are_male() {
+		assertEquals("Male", actualAnswer);
+	}
+
+
+
 }

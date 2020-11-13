@@ -17,23 +17,23 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: What is your gender?
+Feature: What is your gender ?
   I want to use this template for my feature file
 
   @tag1
-  Scenario: Is invalid gender
-		Given other
+  Scenario: other isn't Gender
+		Given I am other
 		When I ask about your gender
-		Then I should be told "F or M"
+		Then I should be told gender "F or M"
 
   @tag2
-  Scenario Outline: F or M is gender
-		Given "<gender>"
-		When Your gender is F or M
-		Then I should be told "<answer>"
+  Scenario Outline: I am Male
+		Given gender is "<gender>"
+		When I ask if you are male
+		Then I should be told gender "<answer>"
 
     Examples: 
       | gender | answer |
-			| F | YAS |
-			| M | YAS |
+			| Female | YAS |
+			| Male | YAS |
 			| anything else! | Nope |
