@@ -11,13 +11,14 @@ public class StepDefs {
 	String notMarried;
 	String married;
 	String state;
+	int age;
+	int prima;
 	private String today;
 	private String gender;
 	private String actualAnswer;
 	@Given("customer is not married")
 	public void customer_is_not_married() {
 		this.marriage = "not married";
-
 	}
 	
 	@When("i ask you for you married")
@@ -79,6 +80,16 @@ public class StepDefs {
 		assertEquals("Male", actualAnswer);
 	}
 
+	@When("i ask you for you age")
+	public void i_ask_you_for_you_age() {
+		this.age = 85;
+	}
+	
+	@Then("I should be told the age and the value of your prima")
+	public void i_should_get_age() {
+		assertEquals(85, age);
+	}
 
+	
 
 }
