@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 
 public class StepDefs {
 	private String today;
+	private String gender;
 	private String actualAnswer;
 	@Given("today is Sunday")
 	public void today_is_Sunday() {
@@ -23,5 +24,22 @@ public class StepDefs {
 	@Then("I should be told {string}")
 	public void i_should_be_told(String expectedAnswer) {
 	assertEquals(expectedAnswer, actualAnswer);
+	}
+	
+	@Given("F")
+	public void gender_is_F() {
+		gender = "F";
+	}
+	@Given("{string}")
+	public void gender_is(String today) {
+		this.today = today;
+	}
+	@When("I ask about your gender")
+	public void i_ask_about_your_gender() {
+		actualAnswer = "Its undefined";
+	}
+	@Then("I should be told {string} gender")
+	public void i_should_be_told_gender(String expectedAnswer) {
+		assertEquals(expectedAnswer, actualAnswer);
 	}
 }
