@@ -36,6 +36,7 @@ dependencies {
 configurations {
 	cucumberRuntime {
 		extendsFrom testImplementation
+		
 	}
 }
 
