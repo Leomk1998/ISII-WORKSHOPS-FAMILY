@@ -5,6 +5,21 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class CarInsurance {
+	
+	public  static void carInsurance(String sexo,String casado,int edad) {
+		int prima = 500;
+	    if(sexo.equals("M") && casado.equals("not married") && edad<25) {
+	    	prima+=1500;
+	    }if(sexo.equals("F") && casado.equals("married")) {
+	    	prima-=200;
+	    }if(edad<65 && edad>45) {
+	    	prima-=100;
+	    }if(edad>80) {
+	    	 System.out.println("No se vender seguros para mayores de 80");
+	    	 prima=-1;
+	    }
+	    System.out.println("El valor de la prima es "+prima);
+	}
 
 	public static void main(String[] args) throws IOException {
 		System.out.print("Ingrese su edad:");
