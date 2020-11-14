@@ -24,7 +24,7 @@ Feature: What is your gender ?
   Scenario: other isn't Gender
 		Given I am other
 		When I ask about your gender
-		Then I should be told gender "F or M"
+		Then I should be told gender "Nope"
 
   @tag2
   Scenario Outline: I am Male
@@ -34,6 +34,6 @@ Feature: What is your gender ?
 
     Examples: 
       | gender | answer |
-			| Female | YAS |
-			| Male | YAS |
-			| anything else! | Nope |
+      | F | YAS |
+      | M | YAS |
+      | anything else! | Nope |

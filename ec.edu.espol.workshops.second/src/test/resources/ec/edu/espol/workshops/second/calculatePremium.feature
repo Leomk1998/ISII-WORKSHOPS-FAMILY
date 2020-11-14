@@ -5,9 +5,8 @@ Feature: Calculate the insurance prime for a man
 		Then i should get <marriage>
 	
 	Examples: 
-      | sex | marriage | price |
-	  | m | married | 300 |
-	  | f | not married | 500 |
+      	| sex | marriage | price |
+	| M | married | 300 |
+	| F | not married | 500 |
 	  
-	
 	
