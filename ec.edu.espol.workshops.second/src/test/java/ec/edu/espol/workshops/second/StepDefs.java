@@ -45,7 +45,6 @@ public class StepDefs {
 	public void i_should_get_not_married() {
 		assertEquals("not married", this.notMarried);
 	}
-<<<<<<< HEAD
 	
 	@Given("today is Sunday")
 	public void today_is_Sunday() {
@@ -63,10 +62,8 @@ public class StepDefs {
 	public void i_should_be_told(String expectedAnswer) {
 	assertEquals(expectedAnswer, actualAnswer);
 	}
-=======
 
 
->>>>>>> refs/heads/main
 	@Given("I am other")
 	public void f() {
 		gender = "anything else!";

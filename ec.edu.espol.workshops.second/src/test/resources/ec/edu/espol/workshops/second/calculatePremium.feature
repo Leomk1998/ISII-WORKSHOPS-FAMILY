@@ -9,11 +9,3 @@ Feature: Calculate the insurance prime for a man
 	| M | married | 300 |
 	| F | not married | 500 |
 	  
-<<<<<<< HEAD
-	  
-	  
-	  
-	
-=======
->>>>>>> refs/heads/main
-	
