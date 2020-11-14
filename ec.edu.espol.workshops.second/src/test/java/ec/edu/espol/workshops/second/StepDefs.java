@@ -57,7 +57,6 @@ public class StepDefs {
 	public void i_should_be_told(String expectedAnswer) {
 	assertEquals(expectedAnswer, actualAnswer);
 	}
-	
 	@Given("I am other")
 	public void f() {
 		gender = "anything else!";
