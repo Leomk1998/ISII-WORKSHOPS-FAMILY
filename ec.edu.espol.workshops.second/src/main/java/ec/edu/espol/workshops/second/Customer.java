@@ -1,10 +1,16 @@
 package ec.edu.espol.workshops.second;
-/*Clase Customer 29/10/2020*/
+/**
+*
+* Comments
+* @author Christian Guerrero
+*/
 public class Customer {
-	String sexo;
-	String casado;
-	int edad;
-	
+	public String sexo;//Variable sexo
+	public String casado;//Variable string
+	private int edad=0;
+	/**
+	* Add Constructor
+	*/
 	public Customer() {
 		
 	}
