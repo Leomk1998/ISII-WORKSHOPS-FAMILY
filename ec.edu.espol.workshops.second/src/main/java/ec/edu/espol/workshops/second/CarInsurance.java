@@ -27,11 +27,24 @@ public class CarInsurance {
 	    Scanner entradaEscaner = new Scanner(new InputStreamReader(System.in, "UTF-8"));
 	    entradaTeclado = entradaEscaner.nextLine();
 	    int edad = Integer.parseInt(entradaTeclado);
+	    while(edad<0) {
+	    	entradaTeclado = "";
+	    	System.out.print("Error, ingrese un numero positivo.");
+	    	System.out.print("Ingrese su edad:");
+		    entradaTeclado = entradaEscaner.nextLine();
+		    edad = Integer.parseInt(entradaTeclado);
+	    }
 	    System.out.print("Ingrese su sexo(M/F):");
 	    String sexo = entradaEscaner.nextLine();
 	    entradaTeclado = "";
 	    System.out.print("Ingrese si esta casado o no(married/not married):");
 	    String casado = entradaEscaner.nextLine();
+	    while(!(casado.equals("not married") || casado.equals("married"))) {
+	    	System.out.print("Error, ingrese 'married' o 'not married' ");
+	    	entradaTeclado = "";
+	    	System.out.print("Ingrese si esta casado o no(married/not married):");
+		    casado = entradaEscaner.nextLine();
+	    }
 	    entradaTeclado = "";
 	    System.out.println(casado.equals("not married"));
 	    int prima = 500;
