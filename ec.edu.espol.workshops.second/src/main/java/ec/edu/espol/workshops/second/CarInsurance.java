@@ -36,6 +36,12 @@ public class CarInsurance {
 	    }
 	    System.out.print("Ingrese su sexo(M/F):");
 	    String sexo = entradaEscaner.nextLine();
+	    while(!(sexo.equals("M") || casado.equals("F"))) {
+	    	System.out.print("Error, ingrese M o F");
+	    	entradaTeclado = "";
+	    	System.out.print("Ingrese su sexo(M/F):");
+		    sexo = entradaEscaner.nextLine();
+	    }
 	    entradaTeclado = "";
 	    System.out.print("Ingrese si esta casado o no(married/not married):");
 	    String casado = entradaEscaner.nextLine();
