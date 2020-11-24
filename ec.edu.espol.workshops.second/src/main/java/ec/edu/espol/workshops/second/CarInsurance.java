@@ -36,7 +36,7 @@ public class CarInsurance {
 	    }
 	    System.out.print("Ingrese su sexo(M/F):");
 	    String sexo = entradaEscaner.nextLine();
-	    while(!(sexo.equals("M") || casado.equals("F"))) {
+	    while(!(sexo.equals("M") || sexo.equals("F"))) {
 	    	System.out.print("Error, ingrese M o F");
 	    	entradaTeclado = "";
 	    	System.out.print("Ingrese su sexo(M/F):");
@@ -66,8 +66,6 @@ public class CarInsurance {
 	    	 prima=-1;
 	    }
 	    System.out.println("El valor de la prima es "+prima);
-	    
 	}
-	
 	
 }
