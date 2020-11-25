@@ -52,17 +52,19 @@ public class CarInsurance {
 		    casado = entradaEscaner.nextLine();
 	    }
 	    entradaTeclado = "";
-	    System.out.println(casado.equals("not married"));
 	    int prima = 500;
 	    if(sexo.equals("M") && casado.equals("not married") && edad<25) {
 	    	prima+=1500;
 	    	
 	    }if(sexo.equals("F") && casado.equals("married")) {
 	    	prima-=200;
-	    }if(edad<65 && edad>45) {
+	    }if(edad<65 && edad>=45) {
 	    	prima-=100;
 	    }if(edad>80) {
 	    	 System.out.println("No se vender seguros para mayores de 80");
+	    	 prima=-1;
+	    }if(edad<18 ) {
+	    	 System.out.println("No se vender seguros para menores de edad (menores de 18)");
 	    	 prima=-1;
 	    }
 	    System.out.println("El valor de la prima es "+prima);
