@@ -16,7 +16,7 @@ public class CarInsurance {
 	    String casado = entradaEscaner.nextLine();
 	    entradaTeclado = "";
 	    System.out.println(casado.equals("not married"));
-	    int prima = 600;
+	    int prima = 600; //Comentario
 	    if(sexo.equals("M") && casado.equals("not married") && edad<25) {
 	    	prima+=1500;
 	    	
