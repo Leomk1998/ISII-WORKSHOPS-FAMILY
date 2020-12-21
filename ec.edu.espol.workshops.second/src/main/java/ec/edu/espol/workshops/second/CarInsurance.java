@@ -19,7 +19,6 @@ public class CarInsurance {
 	    int prima = 600; //Comentariox2
 	    if(sexo.equals("M") && casado.equals("not married") && edad<25) {
 	    	prima+=1500;
-	    	
 	    }if(sexo.equals("F") && casado.equals("married")) {
 	    	prima-=200;
 	    }if(edad<65 && edad>45) {
